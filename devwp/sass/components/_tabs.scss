@@ -1,0 +1,118 @@
+/**
+ * Tabs
+ * =================================
+ * - Tabs on Homepage
+ *
+ *
+ *
+ */
+
+
+.tabs {
+  background-color: transparent;
+  border: none;
+
+  .is-active a {
+    background-color: transparent;
+  }
+
+  .tabs-title a {
+    font-size: 1.3em;
+  }
+}
+
+.tabs-content {
+  background: transparent;
+  border: none;
+}
+
+
+.slidemenu {
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+.slidemenu button {
+  width: 33.3%;
+  display: block;
+  float: left;
+}
+
+#cssmenu {
+  width: auto;
+}
+
+#cssmenu ul, button {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 3;
+  display: block;
+}
+
+
+#cssmenu ul button {
+  display: block;
+  padding: 0;
+}
+
+#cssmenu ul button a {
+  color: #999999;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 18px;
+  position: relative;
+  display: block;
+  padding: 15px 5px;
+  transition: color .25s;
+}
+
+#cssmenu ul button a:hover {
+  color: #6f6f6f;
+  background-color: transparent;
+}
+
+#cssmenu ul button a:hover:before {
+  width: 100%;
+}
+
+#cssmenu ul button a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 0;
+  background: #999999;
+  transition: width .48s;
+}
+
+#cssmenu ul button.last > a:after,
+#cssmenu ul button:last-child > a:after {
+  display: none;
+}
+
+#cssmenu ul button.is-active a {
+  color: #6f6f6f;
+}
+
+#cssmenu ul button.is-active a:before {
+  width: 100%;
+  background: #6f6f6f;
+}
+
+button {
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  #cssmenu ul button a {
+    padding: 15px 0px;
+  }
+}
