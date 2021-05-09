@@ -19,18 +19,15 @@
 
 <!-- FOOTER START -->
 <div class="footer">
-    <div class="contain">
-        <div class="col">
-            <?php wp_nav_menu( array( 'theme_location' => 'footer-column-1' ) ); ?>
-        </div>
-        <div class="col">
-            <?php wp_nav_menu( array( 'theme_location' => 'footer-column-2' ) ); ?>
-        </div>
-        <div class="col">
-            <?php wp_nav_menu( array( 'theme_location' => 'footer-column-3' ) ); ?>
-        </div>
-        <div class="clearfix"></div>
+    <div class="footer-link">
+        <a class = "dark-color-invert" href="#cssmenu">Back to Top</a>
     </div>
+    <div class="footer-link">
+        <a class = "dark-color-invert" href="https://foothillschurch.com/">Back to Foothills Church</a>
+    </div>
+
+    <hr>
+    <p class = "center dark-color-invert">	&#169; 2021 Foothills Church</p>
 </div>
 <!-- END OF FOOTER -->
 
