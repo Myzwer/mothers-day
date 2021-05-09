@@ -86,30 +86,12 @@ get_header(); ?>
                         </ul>
 
                         <div class="tabs-content" data-tabs-content="example-tabs">
-                            <div class="tabs-panel is-active" id="panel1">
-                                <?php if (function_exists('photo_gallery')) {
-                                    photo_gallery(1);
-                                } ?>
+                            <?php the_content(); ?>
 
                                 <?php if( get_field('gallery_unavailable_1') ): ?>
                                     <p class = "center"> <?php the_field("gallery_unavailable_1"); ?></p>
                                 <?php endif; ?>
 
-                            </div>
-                            <div class="tabs-panel" id="panel2">
-                                <?php if (function_exists('photo_gallery')) {
-                                    photo_gallery(2);
-                                } ?>
-
-                                <?php if( get_field('gallery_unavailable_2') ): ?>
-                                    <p class = "center"> <?php the_field("gallery_unavailable_2"); ?></p>
-                                <?php endif; ?>
-                            </div>
-                            <div class="tabs-panel" id="panel3">
-                                <?php if( get_field('gallery_unavailable_3') ): ?>
-                                    <p class = "center"> <?php the_field("gallery_unavailable_3"); ?></p>
-                                <?php endif; ?>
-                            </div>
                         </div>
 
                     </nav>

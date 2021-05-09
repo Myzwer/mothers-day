@@ -71,4 +71,9 @@ function register_col_3() {
 }
 add_action( 'init', 'register_col_3' );
 
+
+// stop wordpress removing div tags
+
+remove_filter('the_content', 'wpautop');
+
 ?>
