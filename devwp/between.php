@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Front Page
+ * Template Name: Between Page
  *
  * The Frontpage of the Yestau Theme
  *
@@ -16,15 +16,11 @@ get_header(); ?>
     <div class="grid-container full-width">
         <div class="grid-x grid-padding-x full-background"
              style="background: url(<?php the_field("background_image"); ?>);
-                     background-position: center center;">
+                 background-position: center center;">
             <div class="large-12 cell">
                 <div class="content-middle">
-                    <h1 class="center light-color-invert"><span
-                                class="show-for-desktop">-</span> <?php the_field("headline_title_1"); ?> <span
-                                class="show-for-desktop">-</span></h1>
-                    <h3 class="center tagline"><span
-                                class="show-for-desktop">-</span> <?php the_field("headline_title_2"); ?> <span
-                                class="show-for-desktop">-</span></h3>
+                    <h1 class="center light-color-invert"><span class = "show-for-desktop">-</span> <?php the_field("headline_title_1"); ?> <span class = "show-for-desktop">-</span></h1>
+                    <h3 class="center tagline"><span class = "show-for-desktop">-</span> <?php the_field("headline_title_2"); ?> <span class = "show-for-desktop">-</span></h3>
                     <h3 class="center"><i class="fas fa-heart"></i></h3>
                 </div>
             </div>
@@ -82,8 +78,8 @@ get_header(); ?>
                 <div id='cssmenu'>
                     <nav class="slidemenu">
                         <ul>
-                            <button class="all is-active"><a href='/frontpage#cssmenu'><span>9am</span></a></button>
-                            <button class="work"><a href='/between#cssmenu'><span class="work">In Between</span></a></button>
+                            <button class="all"><a href='/frontpage#cssmenu'><span>9am</span></a></button>
+                            <button class="work is-active"><a href='/between#cssmenu'><span class="work">In Between</span></a></button>
                             <button class="free"><a href='/11am#cssmenu'><span class="free">11am</span></a></button>
                         </ul>
                     </nav>
@@ -128,3 +124,5 @@ get_header(); ?>
 
 
 <?php get_footer();
+
+
